@@ -29,10 +29,10 @@
             </section>
             <section>
                 <div id="tabs">
-                    <button id="left">Design</button><button>Photography</button>
+                    <button id="designButton" class="tabactive">Design</button><button id="photoButton">Photography</button>
                 </div>
     <!--Design Form-->
-                <form>
+                <form id="designForm">
                     <label class="intro">
                         Name:
                         <input type="text" class="intro"/>
@@ -110,7 +110,7 @@
                     <button class="submit">Submit</button>
                 </form>
     <!--Photography Form-->
-                <form>
+                <form id="photographyForm" class="hidden">
                     <label>
                         Name:
                         <input type="text"/>
@@ -175,5 +175,37 @@
 			<p id="copyright">&copy; 2017 | Megan Baker Creations. All rights reserved. All images are © Megan Baker, and may only be used as part of a Megan Baker web page. Please do not download images without permission. Linking to pages, posts, or images is allowed, as long as the name, Megan Baker, and a link to www.megan.bakercreations.com is also included.</p>
 			</footer>
 		</div>	
+        <script>
+            var designButton = document.getElementById('designButton');
+            var photoButton = document.getElementById('photoButton');
+            
+            var designForm = document.getElementById('designForm');
+            var photoForm = document.getElementById('photographyForm');
+            
+            function showSection(isDesignSection) {
+                var sectionToHide = photoForm;
+                var sectionToShow = designForm;
+                
+                if (!isDesignSection) {
+                    sectionToHide = designForm;
+                    sectionToShow = photoForm;
+                }
+                
+                sectionToHide.classList.add('hidden');
+                sectionToShow.classList.remove('hidden');
+            }
+            
+            designButton.addEventListener('click', function(e) {
+                showSection(true);
+                designButton.classList.add('tabactive');
+                photoButton.classList.remove('tabactive');
+            });
+            
+            photoButton.addEventListener('click', function(e) {
+                showSection(false);
+                photoButton.classList.add('tabactive');
+                designButton.classList.remove('tabactive');
+            })
+        </script>
 	</body>
 </html>

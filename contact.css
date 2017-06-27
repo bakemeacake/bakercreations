@@ -24,6 +24,14 @@ button {
 button:hover {
     opacity: .8;
 }
+button.tabactive {
+    background-color:#D1D7DD;
+    color: #506075;
+}
+button.tabactive:hover {
+    cursor: default;
+    opacity: 1;
+}
 #tabs {
     max-width: 700px;
 }
@@ -71,4 +79,8 @@ select {
     top: 3px;
     height: 0;
     overflow: visible;
+}
+
+.hidden {
+    display: none;
 }
