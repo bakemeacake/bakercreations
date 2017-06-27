@@ -1,0 +1,74 @@
+form {
+    padding: 30px 0 0 0;
+    background-color: #D1D7DD;
+    color: #506075;
+    max-width: 700px;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+}
+label {
+    display: block;
+    width: 80%;
+    padding: 15px 10px 15px 15px;
+    margin: auto;
+}
+button {
+    background-color: #F08080;
+    border: none;
+    font-family: Sling;
+    font-size: 1em;
+    padding: 20px 5px;
+    color: white;
+    cursor: pointer;
+}
+button:hover {
+    opacity: .8;
+}
+#tabs {
+    max-width: 700px;
+}
+#tabs button {
+    width: 49%;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+}
+#designButton {
+    margin-right: 2%;
+}
+.submit {
+    width: 96%;
+    margin: 30px auto 10px auto; /*why is this not centered?*/
+    border-radius: 10px;
+}
+input, textarea {
+    background-color: #D1D7DD;
+    border: none;
+    border-bottom: 2px solid #506075;
+    width: 95%;
+    padding: 5px;
+}
+select {
+    padding: 5px 8px;
+    border: none;
+    box-shadow: none;
+    background: transparent;
+    background-image: none;
+    -webkit-appearance: none;
+    color: white;
+    cursor: pointer;
+}
+.mltpchc {
+    background-color: #F08080;
+    display: inline-block;
+    margin-left: 10px;
+    position: relative;
+    border-radius: 5px;
+}
+.mltpchc select:after{
+    content: "▾";/*where is this?*/
+    position: absolute;
+    right: 1px;
+    top: 3px;
+    height: 0;
+    overflow: visible;
+}

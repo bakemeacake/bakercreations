@@ -1,0 +1,32 @@
+#top-row {
+    position: relative;
+    margin-top: 190px;
+    padding-bottom: 5px;
+}
+#intro {
+    position: absolute;
+    width: 330px;
+    background: white;
+    right: 5%;
+    top: -80px;
+    padding: 12px;
+}
+#second-row, #bottom-row {
+    display: flex;
+    flex-direction: row; 
+
+}
+.left, .right {
+    flex: 1 1 50%;
+    margin: auto 10px;
+}
+#second-row {
+    background-color: #9DD6D4;
+    padding: 17px 5%;
+}
+#second-row h2, #second-row p{
+    color: white;
+}
+section {
+    margin: 5px 0;
+}

@@ -1,0 +1,19 @@
+
+#top-row, #second-row, #third-row, #fourth-row, #bottom-row {
+    display: flex;
+    flex-direction: row;
+}
+.left, .right {
+    flex: 1 1 50%;
+    margin: auto 10px;
+}
+#page-title {
+    margin: 0 5.7%;
+}
+#second-row, #fourth-row {
+    background-color: #9DD6D4;
+    color: white;
+}
+.white {
+    color: white;
+}

@@ -1,0 +1,96 @@
+@font-face {
+    font-family: Sling;
+    src: url('/static/fonts/Sling.ttf');
+}
+@font-face {
+    font-family: Fredoka One;
+    src: url('/static/fonts/FredokaOne-Regular.otf');
+}
+body {
+    margin: 0;
+}
+#content {
+    margin: 150px auto 0;
+    font-family: Sling;
+    color: #6D7A8B;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-family: Fredoka One;
+    color: #9DD6D4;
+    font-weight: normal;
+}
+
+section {
+    padding: 14px 5%;
+}
+
+img {
+    max-width: 100%;
+}
+
+a {
+    color: #C84D4D;
+    cursor: pointer;
+    text-decoration: none;
+}
+a:visited {
+    color: #6BB4B1;
+}
+a:hover {
+    color: #F08080;
+}
+a:active {
+    color: #6BB4B1;
+}
+
+nav {
+    position: fixed;
+    width: 100%;
+    height: 90px;
+    background: white;
+    top: 0;
+    left: 0;
+    z-index: 2;
+    box-shadow: 0 5px 15px -7px grey;
+    /*opacity: .9;   --is there a way to do this without causing the words to change opacity too?*/
+}
+nav li {
+    display: inline-block;
+    list-style-type: none;
+    font-family: Fredoka One;
+    padding-right: 3em;
+    margin: 20px 0px 0px 0px;
+}
+nav ul a {
+    color: #9DD6D4;
+    text-decoration: none;
+    padding: 7px 12px;
+    border-radius: 10px; 
+}
+nav ul a:visited {
+    color: #9DD6D4;
+}
+nav ul a:active {
+    color: #6D7A8B;
+    background-color: #CDEFEE;
+}
+nav ul a:hover {
+    color: #F08080;
+    background-color: #CDEFEE; 
+}
+
+#logo {
+    width: 75px;
+    position: absolute;
+    top: 9px;
+    right: 50px;
+}
+
+ul {
+    padding-left: 50px;
+}
+footer {
+    background-color: #CED3D8;
+    padding: 10px 5.7%;
+}
